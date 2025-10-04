@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=4 uid="uid://07sk7xfeg2iq"]
 
-[ext_resource type="TileSet" uid="uid://c1hm6rxxdvll3" path="res://tilesets/farm_tileset.tres" id="1_m5rfg"]
+[ext_resource type="TileSet" uid="uid://c1hm6rxxdvll3" path="res://resources/farm_tileset.tres" id="1_m5rfg"]
 [ext_resource type="PackedScene" uid="uid://camspwflon70l" path="res://scenes/player/player.tscn" id="2_oc6w8"]
 
 [node name="TestScene" type="Node2D"]
