@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfu2c4re3e87l"
-path="res://.godot/imported/farmer_tilling.png-5fa77d3b371c2ed237d17fe70e4ab263.ctex"
+uid="uid://bihah6miath6e"
+path="res://.godot/imported/potato_growth_sprite.png-9c4e50d042e028e841e3f9a8e61555c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spritesheets/farmer_tilling.png"
-dest_files=["res://.godot/imported/farmer_tilling.png-5fa77d3b371c2ed237d17fe70e4ab263.ctex"]
+source_file="res://assets/spritesheets/crops/potato_growth_sprite.png"
+dest_files=["res://.godot/imported/potato_growth_sprite.png-9c4e50d042e028e841e3f9a8e61555c4.ctex"]
 
 [params]
 

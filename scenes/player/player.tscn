@@ -1,10 +1,10 @@
 [gd_scene load_steps=75 format=3 uid="uid://camspwflon70l"]
 
 [ext_resource type="Script" uid="uid://dvyx6vghx73xa" path="res://scenes/player/player.gd" id="1_lvxji"]
-[ext_resource type="Texture2D" uid="uid://gj8xv1ntk0or" path="res://assets/spritesheets/farmer_idle.png" id="2_lvxji"]
-[ext_resource type="Texture2D" uid="uid://cfu2c4re3e87l" path="res://assets/spritesheets/farmer_tilling.png" id="3_0owmy"]
+[ext_resource type="Texture2D" uid="uid://gj8xv1ntk0or" path="res://assets/spritesheets/farmer/farmer_idle.png" id="2_lvxji"]
+[ext_resource type="Texture2D" uid="uid://cfu2c4re3e87l" path="res://assets/spritesheets/farmer/farmer_tilling.png" id="3_0owmy"]
 [ext_resource type="Script" uid="uid://bhwkc7n7eksf1" path="res://data/state_machine/node_state_machine.gd" id="3_75vfm"]
-[ext_resource type="Texture2D" uid="uid://dqbry8r2ego37" path="res://assets/spritesheets/farmer_walk.png" id="3_p47bc"]
+[ext_resource type="Texture2D" uid="uid://dqbry8r2ego37" path="res://assets/spritesheets/farmer/farmer_walk.png" id="3_p47bc"]
 [ext_resource type="Script" uid="uid://knrynei212o0" path="res://scenes/player/idle_state.gd" id="4_0owmy"]
 [ext_resource type="Script" uid="uid://b2870ynewapr1" path="res://scenes/player/walk_state.gd" id="6_75vfm"]
 [ext_resource type="Script" uid="uid://cdp45ihoyunb0" path="res://scenes/player/till_state.gd" id="8_qek5x"]

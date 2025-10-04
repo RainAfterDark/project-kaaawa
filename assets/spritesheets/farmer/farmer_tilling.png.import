@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqbry8r2ego37"
-path="res://.godot/imported/farmer_walk.png-4ce461d9ecae4ce9475f44a736f2aa06.ctex"
+uid="uid://cfu2c4re3e87l"
+path="res://.godot/imported/farmer_tilling.png-9832193e587c10f53121c89874550f23.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spritesheets/farmer_walk.png"
-dest_files=["res://.godot/imported/farmer_walk.png-4ce461d9ecae4ce9475f44a736f2aa06.ctex"]
+source_file="res://assets/spritesheets/farmer/farmer_tilling.png"
+dest_files=["res://.godot/imported/farmer_tilling.png-9832193e587c10f53121c89874550f23.ctex"]
 
 [params]
 

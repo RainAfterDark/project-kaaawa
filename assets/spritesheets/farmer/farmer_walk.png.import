@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bihah6miath6e"
-path="res://.godot/imported/potato_growth_sprite.png-f527932043e40188b457982d42bff879.ctex"
+uid="uid://dqbry8r2ego37"
+path="res://.godot/imported/farmer_walk.png-c67bec316bceab86c8eab68e879706c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/potato_growth_sprite.png"
-dest_files=["res://.godot/imported/potato_growth_sprite.png-f527932043e40188b457982d42bff879.ctex"]
+source_file="res://assets/spritesheets/farmer/farmer_walk.png"
+dest_files=["res://.godot/imported/farmer_walk.png-c67bec316bceab86c8eab68e879706c8.ctex"]
 
 [params]
 
