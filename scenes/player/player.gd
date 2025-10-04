@@ -4,8 +4,10 @@ extends CharacterBody2D
 @export var sprite: AnimatedSprite2D
 
 var direction: Vector2 = Vector2.ZERO
+var moving: bool = false
 
 func _physics_process(delta: float) -> void:
+	moving = true
 	if Input.is_action_pressed("move_left"):
 		direction = Vector2.LEFT
 	elif Input.is_action_pressed("move_right"):
@@ -15,7 +17,7 @@ func _physics_process(delta: float) -> void:
 	elif Input.is_action_pressed("move_down"):
 		direction = Vector2.DOWN
 	else:
-		direction = Vector2.ZERO
+		moving = false
 
 func do_directional_action(action: String) -> void:
 	if direction == Vector2.LEFT:
@@ -31,3 +33,6 @@ func do_directional_action(action: String) -> void:
 	else:
 		sprite.play(action + "_front")
 	pass
+	
+func is_moving() -> bool:
+	return moving
