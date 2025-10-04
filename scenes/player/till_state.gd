@@ -7,16 +7,16 @@ func _on_process(_delta : float) -> void:
 	pass
 
 func _on_physics_process(_delta : float) -> void:
-	player.do_directional_action("idle")
+	pass
 
 func _on_next_transitions() -> void:
-	if player.is_moving():
-		transition.emit("Walk")
-	elif Input.is_action_just_pressed("use_tool"):
-		transition.emit("Till")
+	if !sprite.is_playing():
+		transition.emit("Idle")
+		sprite.translate(Vector2(0, 2))
 
 func _on_enter() -> void:
-	pass
+	sprite.translate(Vector2(0, -2))
+	player.do_directional_action("till")
 
 func _on_exit() -> void:
 	pass

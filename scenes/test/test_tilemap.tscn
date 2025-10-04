@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=4 uid="uid://07sk7xfeg2iq"]
+[gd_scene load_steps=5 format=4 uid="uid://07sk7xfeg2iq"]
 
 [ext_resource type="TileSet" uid="uid://c1hm6rxxdvll3" path="res://resources/farm_tileset.tres" id="1_m5rfg"]
 [ext_resource type="PackedScene" uid="uid://camspwflon70l" path="res://scenes/player/player.tscn" id="2_oc6w8"]
+[ext_resource type="PackedScene" uid="uid://odaxbgnyv4xp" path="res://scenes/components/player_action_controller.tscn" id="3_mgkq1"]
+[ext_resource type="Script" uid="uid://dvqnfw7p7484d" path="res://scenes/components/player_action_controller.gd" id="4_x8ybn"]
 
 [node name="TestScene" type="Node2D"]
 
@@ -13,8 +15,13 @@ tile_map_data = PackedByteArray("AAANAA4AAwACAAIAAAANAA0AAwAFAAEAAAANAAwAAwABAAE
 tile_set = ExtResource("1_m5rfg")
 
 [node name="Dirt" type="TileMapLayer" parent="Tilemap"]
-tile_map_data = PackedByteArray("AAAKAAcABAAHAAMAAAAJAAcABAAEAAAAAAAJAAgABAADAAEAAAAJAAkABAADAAEAAAAJAAoABAAEAAMAAAAKAAoABAAIAAAAAAAKAAsABAADAAEAAAALAAoABAABAAMAAAAMAAoABAAGAAMAAAANAAkABAAFAAIAAAANAAgABAAHAAIAAAAMAAgABAAAAAAAAAAMAAkABAAAAAEAAAAOAAkABAAFAAAAAAAPAAkABAAIAAMAAAAQAAkABAACAAMAAAAPAAgABAADAAEAAAAPAAcABAADAAEAAAAPAAYABAAIAAAAAAAQAAYABAABAAMAAAARAAYABAAHAAAAAAARAAcABAAEAAMAAAASAAcABAAHAAAAAAASAAgABAAEAAMAAAATAAgABAAHAAAAAAATAAkABAADAAEAAAATAAoABAAEAAIAAAATAAsABAAAAAIAAAAUAAsABAAHAAEAAAAUAAwABAAEAAMAAAAVAAwABAACAAMAAAANAAoABAABAAIAAAAOAAoABAAHAAEAAAAOAAsABAAEAAMAAAAPAAsABAABAAMAAAAQAAsABAACAAMAAAAKAAwABAAHAAMAAAAJAAwABAABAAMAAAAIAAwABAABAAMAAAAHAAwABAAIAAMAAAAGAAwABAAEAAAAAAAGAA0ABAADAAIAAAAHAAsABAADAAEAAAAHAAoABAADAAEAAAAHAAkABAAHAAAAAAAGAAkABAAEAAMAAAAGAAgABAAHAAAAAAAFAAgABAAEAAMAAAAFAAcABAADAAEAAAAFAAYABAAEAAAAAAAGAAYABAABAAMAAAAHAAYABAAHAAMAAAAHAAUABAADAAAAAAAUAAoABAAFAAAAAAAVAAoABAABAAMAAAAWAAoABAABAAMAAAAXAAoABAACAAMAAAANAAcABAADAAEAAAANAAYABAAJAAQAAAANAAUABAADAAEAAAAMAAYABAABAAMAAAALAAYABAABAAMAAAAKAAYABAAEAAAAAAAOAAYABAABAAMAAAAJAAQABAAAAAMAAAAKAAQABAABAAMAAAALAAQABAABAAMAAAAMAAQABAABAAMAAAANAAQABAAHAAAAAAA=")
 tile_set = ExtResource("1_m5rfg")
 
 [node name="Player" parent="." instance=ExtResource("2_oc6w8")]
 position = Vector2(338, 153)
+
+[node name="PlayerActionController" parent="." node_paths=PackedStringArray("player", "grass_tilemap", "tilled_tilemap") instance=ExtResource("3_mgkq1")]
+script = ExtResource("4_x8ybn")
+player = NodePath("../Player")
+grass_tilemap = NodePath("../Tilemap/Grass")
+tilled_tilemap = NodePath("../Tilemap/Dirt")
