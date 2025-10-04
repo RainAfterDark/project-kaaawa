@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://qvkuepqsais3"]
+
+[ext_resource type="Theme" uid="uid://di6c6eibepkft" path="res://resources/game_theme.tres" id="1_a7v2s"]
+[ext_resource type="PackedScene" uid="uid://ch58e3gs2cydi" path="res://scenes/gui/toolbox.tscn" id="2_f61vh"]
+
+[node name="GameHUD" type="CanvasLayer"]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+theme = ExtResource("1_a7v2s")
+
+[node name="Toolbox" parent="MarginContainer" instance=ExtResource("2_f61vh")]
+layout_mode = 2

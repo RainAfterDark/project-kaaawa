@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch58e3gs2cydi"]
+
+[ext_resource type="Theme" uid="uid://di6c6eibepkft" path="res://resources/game_theme.tres" id="1_86rft"]
+[ext_resource type="Texture2D" uid="uid://o73odun83gt8" path="res://assets/gui/hoe.png" id="2_624ws"]
+
+[node name="Toolbox" type="PanelContainer"]
+offset_right = 76.0
+offset_bottom = 48.0
+scale = Vector2(0.5, 0.5)
+theme = ExtResource("1_86rft")
+theme_type_variation = &"ThemedPanel"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ToolHoe" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+theme_type_variation = &"ToolButton"
+icon = ExtResource("2_624ws")
+
+[node name="ToolHoe2" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+theme_type_variation = &"ToolButton"
+icon = ExtResource("2_624ws")

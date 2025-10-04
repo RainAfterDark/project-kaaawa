@@ -17,12 +17,21 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=640
-window/size/viewport_height=360
+window/size/viewport_width=480
+window/size/viewport_height=270
 window/size/mode=3
 window/stretch/mode="viewport"
 window/stretch/aspect="keep_height"
 window/stretch/scale_mode="integer"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "red",
+"res://data/": "yellow",
+"res://resources/": "green",
+"res://scenes/": "purple"
+}
 
 [input]
 
@@ -56,7 +65,12 @@ use_tool={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="Wall"
+2d_physics/layer_2="Player"
+
 [rendering]
 
-textures/canvas_textures/default_texture_filter=3
+textures/canvas_textures/default_texture_filter=0
 2d/snap/snap_2d_transforms_to_pixel=true
