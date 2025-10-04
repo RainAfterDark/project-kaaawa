@@ -1,10 +1,10 @@
 [gd_resource type="TileSet" load_steps=5 format=3 uid="uid://c1hm6rxxdvll3"]
 
-[ext_resource type="Texture2D" uid="uid://bipfawrru2ybu" path="res://assets/grass_tileset.png" id="1_jsytd"]
-[ext_resource type="Texture2D" uid="uid://2xuixtl4ryif" path="res://assets/dirt_tileset.png" id="2_no7tv"]
+[ext_resource type="Texture2D" uid="uid://bipfawrru2ybu" path="res://assets/tilesets/grass_tileset.png" id="1_4xnj2"]
+[ext_resource type="Texture2D" uid="uid://2xuixtl4ryif" path="res://assets/tilesets/dirt_tileset.png" id="2_gqg0j"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_50o7g"]
-texture = ExtResource("1_jsytd")
+texture = ExtResource("1_4xnj2")
 0:0/0 = 0
 0:0/0/terrain_set = 0
 0:0/0/terrain = 0
@@ -342,7 +342,7 @@ texture = ExtResource("1_jsytd")
 9:4/0/terrains_peering_bit/top_side = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_no7tv"]
-texture = ExtResource("2_no7tv")
+texture = ExtResource("2_gqg0j")
 0:0/0 = 0
 0:0/0/terrain_set = 0
 0:0/0/terrain = 1
@@ -686,5 +686,7 @@ terrain_set_0/terrain_0/name = "Grass"
 terrain_set_0/terrain_0/color = Color(0.27341253, 0.15954381, 1, 1)
 terrain_set_0/terrain_1/name = "Dirt"
 terrain_set_0/terrain_1/color = Color(0.8171283, 0, 0.32666963, 1)
+terrain_set_0/terrain_2/name = "Coarse Dirt"
+terrain_set_0/terrain_2/color = Color(3.3691526e-06, 0.52706313, 0.66269076, 1)
 sources/3 = SubResource("TileSetAtlasSource_50o7g")
 sources/4 = SubResource("TileSetAtlasSource_no7tv")
