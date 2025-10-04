@@ -12,8 +12,6 @@ func _on_physics_process(_delta : float) -> void:
 func _on_next_transitions() -> void:
 	if player.is_moving():
 		transition.emit("Walk")
-	elif Input.is_action_just_pressed("use_tool"):
-		transition.emit("Till")
 
 func _on_enter() -> void:
 	pass

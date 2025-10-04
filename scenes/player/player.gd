@@ -2,6 +2,7 @@ class_name Player
 extends CharacterBody2D
 
 @export var sprite: AnimatedSprite2D
+@export var state_machine: NodeStateMachine
 
 var direction: Vector2 = Vector2.ZERO
 var moving: bool = false
