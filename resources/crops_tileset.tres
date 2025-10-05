@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=13 format=3 uid="uid://cq84w1i70l5h8"]
+[gd_resource type="TileSet" load_steps=17 format=3 uid="uid://cq84w1i70l5h8"]
 
 [ext_resource type="Texture2D" uid="uid://bihah6miath6e" path="res://assets/spritesheets/crops/potato_growth_sprite.png" id="1_16nnv"]
 [ext_resource type="Texture2D" uid="uid://bbqbm7pybqtdr" path="res://assets/spritesheets/crops/strawberry_growth_sprite.png" id="2_1dkln"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://demra3euehkfh" path="res://assets/spritesheets/crops/lavender_growth_sprite.png" id="4_rlldv"]
 [ext_resource type="Texture2D" uid="uid://boo0gnudswreo" path="res://assets/spritesheets/crops/trees_sprite.png" id="5_r80p2"]
 [ext_resource type="Texture2D" uid="uid://dchj8jt3tbkyh" path="res://assets/spritesheets/crops/banana_growth_sprite.png" id="6_5u1uw"]
+[ext_resource type="Texture2D" uid="uid://dhl6ywqei76w8" path="res://assets/tilesets/stone_sprite.png" id="7_26t18"]
+[ext_resource type="Texture2D" uid="uid://6mn0ts8543xd" path="res://assets/tilesets/outside_trees.png" id="8_c844k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1dkln"]
 texture = ExtResource("1_16nnv")
@@ -137,6 +139,30 @@ texture = ExtResource("6_5u1uw")
 4:0/0/texture_origin = Vector2i(0, 10)
 4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4.856186, -2.1583042, 3.956892, -1.7985859, 4.136751, 0.8992939, -5.036045, 1.0791531)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c844k"]
+texture = ExtResource("7_26t18")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.2374573, 0, 6.2950554, 1.7985878, 6.4749146, 6.115198, -4.3166094, 4.136751)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-5.036045, -3.4173155, -2.3381634, -2.5180216, -2.6978807, 0.8992939, -5.935338, 0.35971832)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 5.935337, -1.4388695, -0.35971832, 3.2374573, -5.036045, 3.057598)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ggsm7"]
+texture = ExtResource("8_c844k")
+0:0/size_in_atlas = Vector2i(2, 2)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 6)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -0.71943474, 8, -1.0791512, 8, 8, -8, 8)
+2:0/size_in_atlas = Vector2i(2, 2)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, 14)
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.64771, -1.0791512, 15.647711, -1.6187286, 15.647711, 15.2879925, -14.928274, 16.187284)
+4:0/size_in_atlas = Vector2i(2, 2)
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, 14)
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.64771, -1.0791512, 15.647711, -1.6187286, 15.647711, 15.2879925, -14.928274, 16.187284)
+
 [resource]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 2
@@ -146,3 +172,5 @@ sources/2 = SubResource("TileSetAtlasSource_rlldv")
 sources/3 = SubResource("TileSetAtlasSource_r80p2")
 sources/4 = SubResource("TileSetAtlasSource_5u1uw")
 sources/5 = SubResource("TileSetAtlasSource_26t18")
+sources/6 = SubResource("TileSetAtlasSource_c844k")
+sources/9 = SubResource("TileSetAtlasSource_ggsm7")

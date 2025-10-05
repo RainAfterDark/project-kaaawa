@@ -3,7 +3,6 @@ extends CharacterBody2D
 
 @export var sprite: AnimatedSprite2D
 @export var state_machine: NodeStateMachine
-@export var current_tool: Globals.Tool = Globals.Tool.TillHoe
 
 var direction: Vector2 = Vector2.ZERO
 var moving: bool = false

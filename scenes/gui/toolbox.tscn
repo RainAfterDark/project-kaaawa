@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://ch58e3gs2cydi"]
+[gd_scene load_steps=9 format=3 uid="uid://ch58e3gs2cydi"]
 
 [ext_resource type="Theme" uid="uid://di6c6eibepkft" path="res://resources/game_theme.tres" id="1_86rft"]
+[ext_resource type="Script" uid="uid://ciy3po4qfeccv" path="res://scenes/gui/toolbox_controller.gd" id="2_v2glx"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tu0hn"]
 load_path = "res://.godot/imported/tools_sprite.png-043a8f09c3686f78458e23daf833bbce.ctex"
@@ -57,3 +58,11 @@ custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
 icon = SubResource("AtlasTexture_rrtyt")
+
+[node name="ToolboxController" type="Node" parent="." node_paths=PackedStringArray("till_hoe", "watering_can", "harvest_sack")]
+script = ExtResource("2_v2glx")
+till_hoe = NodePath("../MarginContainer/HBoxContainer/TillHoe")
+watering_can = NodePath("../MarginContainer/HBoxContainer/WateringCan")
+harvest_sack = NodePath("../MarginContainer/HBoxContainer/HarvestSack")
+
+[connection signal="ready" from="ToolboxController" to="ToolboxController" method="_on_ready"]
