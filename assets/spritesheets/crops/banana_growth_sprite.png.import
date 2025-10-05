@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbqbm7pybqtdr"
-path="res://.godot/imported/strawberry_growth_sprite.png-4691e92fc26218d7c35cd323817caea9.ctex"
+uid="uid://dchj8jt3tbkyh"
+path="res://.godot/imported/banana_growth_sprite.png-d09f264ce7794ada150971f0a3e0290e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/strawberry_growth_sprite.png"
-dest_files=["res://.godot/imported/strawberry_growth_sprite.png-4691e92fc26218d7c35cd323817caea9.ctex"]
+source_file="res://assets/spritesheets/crops/banana_growth_sprite.png"
+dest_files=["res://.godot/imported/banana_growth_sprite.png-d09f264ce7794ada150971f0a3e0290e.ctex"]
 
 [params]
 

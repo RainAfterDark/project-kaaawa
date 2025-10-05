@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://demra3euehkfh"
-path="res://.godot/imported/lavender_growth_sprite.png-740b1d3243e224f51279b8c0ea09c093.ctex"
+uid="uid://boo0gnudswreo"
+path="res://.godot/imported/trees_sprite.png-df7badf49f887d4ca33df9ba2d3d56b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/lavender_growth_sprite.png"
-dest_files=["res://.godot/imported/lavender_growth_sprite.png-740b1d3243e224f51279b8c0ea09c093.ctex"]
+source_file="res://assets/spritesheets/crops/trees_sprite.png"
+dest_files=["res://.godot/imported/trees_sprite.png-df7badf49f887d4ca33df9ba2d3d56b6.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbqbm7pybqtdr"
-path="res://.godot/imported/strawberry_growth_sprite.png-52076fc5926843eb310af85371ad5026.ctex"
+uid="uid://ckw4dhniwytro"
+path="res://.godot/imported/red_house.png-c62b9f292fefb1252e71c0e9ac346f80.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spritesheets/crops/strawberry_growth_sprite.png"
-dest_files=["res://.godot/imported/strawberry_growth_sprite.png-52076fc5926843eb310af85371ad5026.ctex"]
+source_file="res://assets/tilesets/red_house.png"
+dest_files=["res://.godot/imported/red_house.png-c62b9f292fefb1252e71c0e9ac346f80.ctex"]
 
 [params]
 

@@ -1,7 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://ch58e3gs2cydi"]
+[gd_scene load_steps=8 format=3 uid="uid://ch58e3gs2cydi"]
 
 [ext_resource type="Theme" uid="uid://di6c6eibepkft" path="res://resources/game_theme.tres" id="1_86rft"]
-[ext_resource type="Texture2D" uid="uid://o73odun83gt8" path="res://assets/gui/hoe.png" id="2_624ws"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tu0hn"]
+load_path = "res://.godot/imported/tools_sprite.png-043a8f09c3686f78458e23daf833bbce.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v2glx"]
+atlas = SubResource("CompressedTexture2D_tu0hn")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rrtyt"]
+load_path = "res://.godot/imported/tools_sprite.png-043a8f09c3686f78458e23daf833bbce.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ko715"]
+atlas = SubResource("CompressedTexture2D_rrtyt")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_v2glx"]
+load_path = "res://.godot/imported/tools_sprite.png-043a8f09c3686f78458e23daf833bbce.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rrtyt"]
+atlas = SubResource("CompressedTexture2D_v2glx")
+region = Rect2(32, 0, 16, 16)
 
 [node name="Toolbox" type="PanelContainer"]
 offset_right = 76.0
@@ -12,22 +32,28 @@ theme_type_variation = &"ThemedPanel"
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
-theme_override_constants/margin_left = 4
+theme_override_constants/margin_left = 8
 theme_override_constants/margin_top = 4
-theme_override_constants/margin_right = 4
+theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 4
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 
-[node name="ToolHoe" type="Button" parent="MarginContainer/HBoxContainer"]
+[node name="TillHoe" type="Button" parent="MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
-icon = ExtResource("2_624ws")
+icon = SubResource("AtlasTexture_v2glx")
 
-[node name="ToolHoe2" type="Button" parent="MarginContainer/HBoxContainer"]
+[node name="WateringCan" type="Button" parent="MarginContainer/HBoxContainer"]
 custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 theme_type_variation = &"ToolButton"
-icon = ExtResource("2_624ws")
+icon = SubResource("AtlasTexture_ko715")
+
+[node name="HarvestSack" type="Button" parent="MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+theme_type_variation = &"ToolButton"
+icon = SubResource("AtlasTexture_rrtyt")

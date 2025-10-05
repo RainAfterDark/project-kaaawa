@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dchj8jt3tbkyh"
-path="res://.godot/imported/banana_growth_sprite.png-f0b1fd755d85c79f4134ba23dea203b7.ctex"
+uid="uid://bm32cgwaedwec"
+path="res://.godot/imported/tools_sprite.png-043a8f09c3686f78458e23daf833bbce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/banana_growth_sprite.png"
-dest_files=["res://.godot/imported/banana_growth_sprite.png-f0b1fd755d85c79f4134ba23dea203b7.ctex"]
+source_file="res://assets/gui/tools_sprite.png"
+dest_files=["res://.godot/imported/tools_sprite.png-043a8f09c3686f78458e23daf833bbce.ctex"]
 
 [params]
 

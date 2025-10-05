@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbqbm7pybqtdr"
-path="res://.godot/imported/strawberry_growth_sprite.png-52076fc5926843eb310af85371ad5026.ctex"
+uid="uid://fuwmryk51h6v"
+path="res://.godot/imported/crops_sprite.png-ec5faf12ef1d3fd3b7b4a2b9c04823d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/spritesheets/crops/strawberry_growth_sprite.png"
-dest_files=["res://.godot/imported/strawberry_growth_sprite.png-52076fc5926843eb310af85371ad5026.ctex"]
+source_file="res://assets/gui/crops_sprite.png"
+dest_files=["res://.godot/imported/crops_sprite.png-ec5faf12ef1d3fd3b7b4a2b9c04823d5.ctex"]
 
 [params]
 

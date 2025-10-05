@@ -6,7 +6,12 @@ extends Node2D
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("use_tool"):
-		till_on_player()
+		if player.current_tool == Globals.Tool.TillHoe:
+			till_on_player()
+		elif player.current_tool == Globals.Tool.WateringCan:
+			pass
+		elif player.current_tool == Globals.Tool.HarvestSack:
+			pass
 
 func till_on_player() -> bool:
 	if player.is_moving(): return false

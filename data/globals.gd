@@ -5,3 +5,10 @@ enum Tile {
 	DIRT = 1,
 	COARSE_DIRT = 2
 }
+
+enum Tool {
+	None,
+	TillHoe,
+	WateringCan,
+	HarvestSack
+}
